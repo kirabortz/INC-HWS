@@ -1,0 +1,25 @@
+.spanBlock {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+    color: #0080FF;
+    font-family: Montserrat sans-serif;
+
+
+}
+
+.span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.input {
+    text-indent: 24px ;
+}
+
+.pen {
+    width: 24px;
+    height: 24px;
+}

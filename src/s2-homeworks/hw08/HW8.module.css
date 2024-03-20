@@ -1,0 +1,75 @@
+.container {
+    width: 100%;
+    max-width: 606px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.thead {
+    width: 100%;
+
+    background-color: #E5E5E5;
+    tr{
+
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 120px;
+padding: 10px 0 10px 18px;
+
+    font-family: Roboto sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+     }
+}
+
+tbody{
+    width: 100%;
+    tr{
+        padding: 10px 18px 10px 18px;
+    }
+}
+
+.item {
+    display: flex;
+    flex-flow: row nowrap ;
+    gap: 125px;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
+    font-family: Roboto sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.item:last-of-type {
+    border-bottom: 1px solid transparent;
+}
+
+.users {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.nameCol {
+
+width: 150px;
+}
+
+.ageCol {
+
+
+}
+.nameAge{
+    font-family: Roboto sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}

@@ -1,0 +1,32 @@
+[data-theme='1'] {
+    --color: #000000;
+    --background: #FFFFFF;
+}
+
+[data-theme='2'] {
+    --color: #000000;
+    --background: #DDEEFF;
+}
+
+[data-theme='3'] {
+    --color: #FFFFFF;
+    --background: #212A34;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--color);
+}
+
+.select {
+    height: 50px;
+    border: 2px solid grey;
+    outline: grey;
+    border-radius: 5px;
+    appearance: none;
+    background: url(arrow.svg) no-repeat right;
+    background-position-x: calc(100% - 8px);
+    color: #4f4f4f;
+    font-size: 25px;
+
+}

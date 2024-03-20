@@ -1,0 +1,40 @@
+.stand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+
+
+/*input{*/
+/*    width: 372px;*/
+/*    height: 36px;*/
+/*    border: 1px solid #D1D1D1;*/
+/*    border-radius: 5px;*/
+/*    text-indent: 12px;*/
+/*    font-weight: bold;*/
+
+/*    &:focus{*/
+/*        outline: none;*/
+
+/*    }*/
+/*}*/

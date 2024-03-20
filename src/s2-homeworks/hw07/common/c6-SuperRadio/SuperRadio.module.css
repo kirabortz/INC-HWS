@@ -1,0 +1,41 @@
+.options {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.radio::before {
+}
+
+
+.radio:checked::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+
+
