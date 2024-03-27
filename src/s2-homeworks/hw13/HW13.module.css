@@ -1,7 +1,15 @@
-.buttonsContainer {
+.responseContainer {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    width: 100%;
+    margin-left: 90px;
 }
 
-.responseContainer {
+.buttonsContainer {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 88px;
 }
 
 .imageContainer {
@@ -11,12 +19,31 @@
 }
 
 .textContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    max-width: 510px;
+    font-family: Montserrat sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+
 }
 
 .code {
+    margin-bottom: 12px;
 }
 
 .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 .info {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+
 }
