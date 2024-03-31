@@ -28,14 +28,12 @@ type ParamsType = {
 }
 
 const getTechs = (params: ParamsType) => {
-    return axios
-        .get<{ techs: TechType[], totalCount: number }>(
-            'https://samurai.it-incubator.io/api/3.0/homework/test3',
-            {params}
-        )
-        .catch((e) => {
-            alert(e.response?.data?.errorText || e.message)
-        })
+    return axios.get<{ techs: TechType[], totalCount: number }>(
+        'https://samurai.it-incubator.io/api/3.0/homework/test3',
+        {params}
+    ).catch((e) => {
+        alert(e.response?.data?.errorText || e.message)
+    })
 }
 
 const HW15 = () => {
@@ -46,27 +44,29 @@ const HW15 = () => {
     const [totalCount, setTotalCount] = useState(100)
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<TechType[]>([])
-
     const sendQuery = (params: any) => {
+
+        console.log(params, 'p')
         setLoading(true)
         getTechs(params)
             .then((res) => {
+                console.log(res?.data.techs)
+                // @ts-ignore
+                setTechs(res?.data.techs)
                 // делает студент
-
+                setLoading(false)
                 // сохранить пришедшие данные
-
-                //
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
+        setPage(newPage)
+        setCount(newCount)
 
-        // setPage(
-        // setCount(
-
-        // sendQuery(
-        // setSearchParams(
+        sendQuery({sort: '5', page: newPage, count: newCount})
+        //@ts-ignore
+        setSearchParams({page: newPage, count: count})
 
         //
     }
@@ -75,10 +75,10 @@ const HW15 = () => {
         // делает студент
 
         // setSort(
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
+        setPage(1) // при сортировке сбрасывать на 1 страницу
 
         // sendQuery(
-        // setSearchParams(
+        // setSearchParams()
 
         //
     }
