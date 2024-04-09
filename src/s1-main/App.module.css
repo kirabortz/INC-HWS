@@ -8,6 +8,7 @@
 }
 
 .hw{
+    position: relative;
     margin-bottom: 35px;
     padding: 24px 70px;
     border-top: 1px solid #D9D9D9;
@@ -15,11 +16,12 @@
 }
 
 .hwTitle {
+    position: relative;
     padding:0 0 10px 70px;
     font-size: 22px;
     font-weight: 600;
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
-
 }
+
