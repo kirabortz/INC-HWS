@@ -35,6 +35,7 @@ const HW14 = () => {
                 if(res?.data.techs.length !== 0){
                     // @ts-ignore
                     setTechs(res?.data.techs)
+                    setLoading(false)
                 }
                 // делает студент
 
